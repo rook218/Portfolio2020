@@ -29,16 +29,19 @@ const contentJSON = {
             html: `
             <div id="project-wrapper" class="content-wrapper">
                <div class="project">
-                   Financial calculators built with Angular7, Bootstrap, and chart.js &lt;<a target="_blank" href="/projects/finance"><span class="blue-font hidden">a</span></a>/&gt;
+                   Financial calculators built with Angular7, Bootstrap, and chart.js &lt;<a target="_blank" href="/projects/finance"><span class="blue-font hidden"> link </span></a>&gt;
                </div>
                <div class="project">
-                   Clock made with vanilla JS and CSS elements only &lt;<a target="_blank" href="/clock"><span class="blue-font hidden">a</span></a>/&gt; 
+                   Clock made with vanilla JS and CSS elements only &lt;<a target="_blank" href="/clock"><span class="blue-font hidden"> link </span></a>&gt; 
                </div>
                <div class="project">
-                   A sample page for a local non-profit &lt;<a target="_blank" href="/ear"><span class="blue-font hidden">a</span></a>/&gt; 
+                   A sample page for a local non-profit &lt;<a target="_blank" href="/ear"><span class="blue-font hidden"> link </span></a>&gt; 
                </div>
                <div class="project">
-                   Drumkit made with vanilla JS, HTML and CSS &lt;<a target="_blank" href="/drum"><span class="blue-font hidden">a</span></a>/&gt; 
+                   Drumkit made with vanilla JS, HTML and CSS &lt;<a target="_blank" href="/drum"><span class="blue-font hidden"> link </span></a>&gt; 
+               </div>
+               <div class="project">
+                   An installation guide builder for Laserfiche, a content management system &lt;<a target="_blank" href="/LFInstallerGuide"><span class="blue-font hidden"> link </span></a>&gt; 
                </div>
             </div>`
         },
