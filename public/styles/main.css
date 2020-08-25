@@ -1,0 +1,117 @@
+/* font-family: 'Share Tech Mono', monospace; */
+
+body {
+    background-color: rgb(112, 112, 112);
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-content::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: #4c9920;
+}
+
+.center {
+    text-align: center;
+}
+
+.blue-font {
+    color: rgb(37, 128, 189);
+    transition: color 300ms;
+}
+
+a span.blue-font {
+    color: rgb(37, 128, 189);
+    transition: color 300ms 1200ms;
+}
+
+.blue-font.hidden {
+    color: black;
+    transition: color 300ms;
+}
+
+.main-border {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: black;
+    transition: overflow-y 0ms 300ms;
+}
+
+.main-hidden {
+    border: 3px solid white;
+    height: 0vh;
+    width: 0vh;
+    color: black;
+    transition: border 200ms, color 300ms, width ease 300ms 300ms, height ease 400ms 600ms;
+}
+
+.main-shown {
+    height: calc(100vh - 6px);
+    width: calc(100vw - 6px);
+    border: 3px solid black;
+    color: white;
+    transition: height ease 400ms, width ease 800ms 400ms, border 750ms 1100ms, color 300ms 1200ms;
+}
+
+.main-content {
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+.main-header {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+.main-paragraph {
+    padding: 1rem;
+}
+
+.main-paragraph ul,
+.main-paragraph li {
+    text-align: left;
+}
+
+.project {
+    display: block;
+    padding: 1rem;
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
+@media screen and (min-width: 768px) {
+    .main-shown {
+        height: calc(100vh - 6px);
+        width: calc(100vh -356px);
+        border: 3px solid black;
+        color: white;
+        padding: 0 2rem;
+        transition: height ease 400ms, width ease 800ms 400ms, border 750ms 1100ms, padding 0ms 1100ms, color 300ms 1200ms;
+    }
+    .main-hidden {
+        border: 3px solid white;
+        height: 0vh;
+        width: 0vh;
+        color: black;
+        transition: border 200ms, color 300ms, width ease 300ms 300ms, height ease 400ms 600ms;
+    }
+    .page-wrapper {
+        display: flex;
+    }
+}

@@ -1,0 +1,70 @@
+.form-item {
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.form-item * {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.form-item.hidden * {
+    width: 0px;
+    height: 0px;
+    border: black;
+    background: black;
+    color: black;
+    overflow: hidden;
+    transition: all 300ms
+}
+
+input,
+select,
+textarea,
+button {
+    border: 2px solid white;
+    background: rgb(29, 29, 29);
+    color: white;
+    resize: none;
+    font-family: 'Share Tech Mono', monospace;
+    transition: all 300ms 1000ms;
+    max-width: 90%;
+    /* color 300ms 1000ms, background 300ms 1000ms, width 300ms 1000ms, height 300ms 1000ms, display 0ms 1000ms; */
+}
+
+input,
+select,
+textarea {
+    width: 300px;
+}
+
+button {
+    margin-top: 3rem;
+    width: 150px;
+}
+
+option {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+button {
+    padding: .5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    transition: all 150ms;
+}
+
+.btn-success {
+    border: 2px solid green;
+    background: darkgreen;
+}
+
+.btn-error {
+    border: 2px solid red;
+    background: darkred;
+}

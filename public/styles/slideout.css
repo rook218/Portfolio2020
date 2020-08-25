@@ -1,0 +1,136 @@
+.hamburger-background {
+    background: black;
+    border-radius: 0% 00% 30% 0%;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+
+.hamburger {
+    width: 6rem;
+    height: 6rem;
+    z-index: 2;
+    position: absolute;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.slice-wrapper {
+    transform: translateY(0px);
+    transition: transform 300ms 300ms;
+}
+
+.hamburger-slice {
+    background-color: #eee;
+    height: 8px;
+    width: 60px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 0.5rem;
+    transition: transform 300ms;
+}
+
+.hamburger-rotate1 {
+    transform: rotate(45deg);
+    transition: transform 300ms 300ms;
+}
+
+.hamburger-rotate2 {
+    transform: rotate(135deg);
+    transition: transform 300ms 300ms;
+}
+
+.h-move1 {
+    transform: translateY(16px);
+    transition: transform 300ms;
+}
+
+.h-move2 {
+    transform: translateY(0px);
+    transition: transform 300ms;
+}
+
+.h-move3 {
+    transform: translateY(-16px);
+    transition: transform 300ms;
+}
+
+#slideout-container {
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    background: black;
+}
+
+.slideout-hidden {
+    margin-left: -500px;
+    transition: margin ease 300ms;
+}
+
+.slideout-shown {
+    margin: -20px;
+    transition: margin ease 300ms;
+}
+
+.slideout-menu ul {
+    padding-top: 200px;
+    margin-top: -100px;
+    list-style: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 350px;
+    transition: color 150ms;
+}
+
+.slideout-menu li span.blue-font:hover {
+    cursor: pointer;
+    color: rgb(0, 225, 255);
+    transition: color 100ms;
+}
+
+@media screen and (min-width: 768px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #page-wrapper {
+        display: flex;
+    }
+    .hamburger-background {
+        position: absolute;
+        display: none;
+    }
+    #hamburger {
+        position: absolute;
+        display: none;
+    }
+    #slideout-container {
+        position: static;
+        z-index: 1;
+        height: 100vh;
+    }
+    .slideout-hidden {
+        margin: 0px;
+    }
+    .slideout-shown {
+        margin: 0px;
+    }
+    .slideout-menu ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        margin-top: 0px;
+        font-size: 1.5rem;
+        line-height: 6rem;
+        /* width: 350px; */
+        border: none;
+    }
+    .slideout-menu li span.blue-font:hover {
+        cursor: pointer;
+        color: rgb(0, 225, 255);
+        transition: color 100ms;
+    }
+}

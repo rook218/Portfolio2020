@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brian Rook - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/form.css" />
+    <link rel="stylesheet" href="/styles/slideout.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div id="slideout-container">
+            <div id="hamburger-background" class="hamburger-background">
+                <div id="hamburger" class="hamburger hamburger-hidden">
+                    <div class="slice-wrapper">
+                        <div class="hamburger-slice"></div>
+                    </div>
+                    <div class="slice-wrapper">
+                        <div class="hamburger-slice"></div>
+                    </div>
+                    <div class="slice-wrapper">
+                        <div class="hamburger-slice"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="slideout-content" class="slideout-menu slideout-hidden">
+                <ul>
+                    <li>
+                        &lt; <a href="#"><span class="blue-font">home</span></a> &gt;
+                    </li>
+                    <li>
+                        &lt; <a href="#"><span class="blue-font">about</span></a> &gt;
+                    </li>
+                    <li>
+                        &lt; <a href="#"><span class="blue-font">projects</span></a> &gt;
+                    </li>
+                    <li>
+                        &lt; <a href="#"><span class="blue-font">nonprofits</span></a> &gt;
+                    </li>
+                    <li>
+                        &lt; <a href="#"><span class="blue-font">contact</span></a> &gt;
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-content" class="center main-border main-hidden">
+            <div class="main-content">
+                <h1 class="main-header">&lt; home &gt;</h1>
+                <p class="main-paragraph">
+                    Thank you for checking out my portfolio site. This entire site is built on one page, with JS listeners and CSS transition effects powering the whole show.
+                </p>
+                <p class="main-paragraph">
+                    Seleting a new page doesn't navigate anywhere, instead it triggers an animation and a script loads JSON into the DOM. It allowed me to have some cool aesthetics for such a simple site.
+                </p>
+                <p class="main-paragraph">
+                    Please see the 'about' page to learn more about who I am, the 'projects' page to see more of what I'm capable of, and of course the 'contact' page to get in touch!
+                </p>
+                <p class="main-paragraph">
+                    Non-profits, please see the 'nonprofits' page to see what I can help you with.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="/scripts/slideout.js"></script>
+<script src="/scripts/main-content.js"></script>
